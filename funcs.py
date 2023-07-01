@@ -29,7 +29,7 @@ def normalize(frame):
     return dummy
 
 def visualize_results(data):
-# Convert data into a DataFrame
+    # Convert data into a DataFrame
     df = pd.DataFrame.from_dict(data, orient='index', columns=['Accurate Diagnoses','Sensivitity', 'Specifity', 'Mean Squared Error'])
     df.reset_index(inplace=True)
     df.rename(columns={'index': 'Iterations'}, inplace=True)
